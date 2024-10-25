@@ -1,0 +1,530 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+h1 {
+    font-size: 9rem; /* מגדיל את הכותרת */
+    text-align: center; /* למרכז את הטקסט */
+    font-weight: bold; /* הדגשת הכותרת */
+}
+
+h1 span {
+    font-size: 11rem; /* גודל שונה ל-span */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('https://www.photo-art.co.il/wp-content/uploads/2015/09/BY1A4457.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.top-screen {
+height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 102, 204, 0.5); /* Blue Gradient Overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: none; /* Hide on larger screens, for use in responsive */
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.logo-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        display: block; /* Show the image on mobile screens */
+        margin-top: 20px;
+    }
+}
+
+/* Section 2: Studio Info */
+.studio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+}
+
+.studio-logo img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.me-logo img {
+    max-width: 440px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.studio-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.studio-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.studio-details i {
+    color: #A00D92; /* Star color to match the brand accent */
+    margin-left: 5px;
+}
+
+.registration-button .btn {
+    display: inline-block;
+    background-color: #A00D92;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.registration-button .btn:hover {
+    background-color: #007d87; /* Darken on hover */
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .studio-info {
+        padding: 30px 10px;
+    }
+
+    .studio-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .studio-details p {
+        font-size: 1rem;
+    }
+
+    .studio-logo img {
+        max-width: 120px;
+    }
+}
+
+/* Section 3: Trainers Section */
+.trainers-section {
+    background-color: #000;
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.triangle {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    position: absolute;
+    bottom: -50px; /* Move the triangle to the bottom */
+    left: 0;
+}
+
+.trainers-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.trainer-circles {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.trainer-circles-explain {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.trainer-name {
+    z-index: 2;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#back-trainer {
+    background-color: #333;
+}
+
+#legs-trainer {
+    background-color: #333;
+}
+
+#back-trainer:hover {
+    background-image: url('./images/eden1.jpg');
+}
+
+#legs-trainer:hover {
+    background-image: url('./images/eden2.jpg');
+}
+
+.registration-button .btn {
+    display: inline-block;
+    background-color: #A00D92;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-top: 40px;
+
+transition: background 0.3s ease;
+}
+
+.registration-button .btn:hover {
+    background-color: #007d87; /* Darken on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .trainer-circles {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.circle-explain {
+        width: 222px;
+        height: 120px;
+    }
+
+/* Section 4: Video Section */
+.video-section {
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-circle {
+    width: 60vw;
+    height: 60vw;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-circle iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-circle {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+/* Section 4: Video Section */
+.video-section {
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-ellipse {
+    width: 80vw;
+    height: 50vw; /* Adjust this for more elliptical shape */
+    max-width: 700px;
+    max-height: 450px;
+    border-radius: 50% / 25%; /* This creates an ellipse */
+    overflow: hidden;
+    position: relative;
+}
+
+.video-ellipse iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-ellipse {
+        width: 90vw;
+        height: 60vw;
+    }
+}
+/* Section 5: Schedule Section */
+.schedule-section {
+    background-color: #c2c2c2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.schedule-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.schedule-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.schedule-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.class-card {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 220px;
+}
+
+.class-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.class-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.registration-button .btn {
+    display: inline-block;
+    background-color: #A00D92;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+}
+
+.registration-button .btn:hover {
+    background-color: #007d87;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .schedule-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Section 6: Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #A00D92;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+.contact-info ul li a {
+    color: #A00D92;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #007d87;
+}
+
+.contact-form {
+    flex: 2;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #A00D92;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #A00D92;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+
+border-color: #ff6347; /* צבע אדום עבור שדה ריק או לא חוקי */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #A00D92;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #007d87;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+        padding: 0;
+    }
+}
