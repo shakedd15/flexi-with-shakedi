@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import image1 from './images/backStretch.jpg';
 import image3 from './images/background2.jpg';
-import mainLogo from './images/Picture18.png';
+import mainLogo from './images/Picture21.png';
 import me from './images/me-doing-this.png';
-import background3 from './images/background4.png';
+import background3 from './images/background3.png';
+import background8 from './images/backgroun8.png';
 import stretchPhoto from './images/5825580610096319359.jpg';
 import eden1 from './images/eden1.jpg';
 import eden2 from './images/eden2.jpg';
+import commant from './images/commant.png';
+import VideoPlayer from './VideoPlayer';
 
 function App() {
   return (
@@ -17,19 +20,36 @@ function App() {
           <img src={mainLogo} alt="Almond Stretching Logo" />
         </div>
         <div className="studio-details"  dir="rtl">
-          <h2>ברוכים הבאים לסטודיו גמישות עם שקדי!</h2>
+          <p>שיעור ראשון מתנה!</p>
                 <br/>
-          <h4>שיעורים מותאמים אישית, מתיחות מודרכות וליווי צמוד שיעזרו לך להגיע לכל יעד גמישות </h4>
+          <p>אנחנו נתמקד בשיפור הדרגתי ובטכניקות מתיחה שיעזרו לך להגיע רחוק יותר ובצורה בטוחה ומהנה
+          <br/>
+           עם מתיחות מודרכות וליווי צמוד שיעזרו לך להגיע לכל יעד גמישות </p>
           <p>
 
           </p>
+           <br/>
           <p>תל אביב
 &#x2728;
-           שדרות ח"ן</p>
+           שדרות ח"ן
+           </p>
+            <br/>
+
+
+           <p>
+           ✨ תני לעצמך את הדחיפה המקצועית שאת צריכה! ✨
+           </p>
+                       <br/>
+
+           <p>
+        <div  className="comment-style">
+          <img src={commant} alt="Almond Stretching Logo" />
         </div>
-        <div className="registration-button">
-          <a href="#registration" className="btn">להרשמה</a>
+        </p>
         </div>
+       <div className="registration-button">
+         <a href="#registration" className="btn">להרשמה</a>
+       </div>
       </section>
 
 
@@ -37,7 +57,7 @@ function App() {
       <section
         className="top-screen"
         style={{
-          backgroundImage: `url(${background3})`,
+          backgroundImage: `url(${background8})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh',
@@ -72,7 +92,7 @@ function App() {
 
       {/* Section 3: Our Trainers Section */}
       <section className="trainers-section">
-        <div className="triangle"></div>
+       
         <h2>האימונים שלנו</h2>
         <div className="trainer-circles">
           <div className="circle" id="back-trainer">
@@ -99,17 +119,13 @@ function App() {
         <div className="registration-button">
           <a href="#registration" className="btn">להרשמה</a>
         </div>
+
       </section>
 
       {/* Section 4: Video in Ellipse */}
       <section className="video-section">
         <div className="video-ellipse">
-          <iframe
-            src="https://www.youtube.com/embed/1qHO_YoZHR8?autoplay=1&mute=1&controls=0&loop=1"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+          <VideoPlayer />
         </div>
       </section>
 
@@ -157,21 +173,22 @@ function App() {
           </ul>
         </div>
 
-        <div className="contact-form">
-          <h2>הרשמה</h2>
-          <form>
-            <label htmlFor="name">First Name / שם מלא <span>*</span></label>
-            <input type="text" id="name" name="name" required />
+      <div className="contact-form" id="registration">
+        <h2>הרשמה</h2>
+        <form>
+          <label htmlFor="name">First Name / שם מלא <span>*</span></label>
+          <input type="text" id="name" name="name" required />
 
-            <label htmlFor="phone">Phone / מספר פלאפון <span>*</span></label>
-            <input type="tel" id="phone" name="phone" required />
+          <label htmlFor="phone">Phone / מספר פלאפון <span>*</span></label>
+          <input type="tel" id="phone" name="phone" required />
 
-            <label htmlFor="message">Message / שאלות נוספות</label>
-            <textarea id="message" name="message"></textarea>
+          <label htmlFor="message">Message / שאלות נוספות</label>
+          <textarea id="message" name="message"></textarea>
 
-            <button type="submit">Send</button>
-          </form>
-        </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
 
         <div id="map">
           <iframe

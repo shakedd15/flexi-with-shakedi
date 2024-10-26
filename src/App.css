@@ -120,24 +120,27 @@ height: 100vh;
     margin-bottom: 20px;
 }
 
-.studio-details h2 {
-    font-size: 1.8rem;
-    color: #333;
+.studio-details {
+  font-family: 'asimon-aaa-400', sans-serif;
+  direction: rtl; /* לשמירה על יישור מימין לשמאל */
+  color: #333;
 }
 
 .studio-details p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+  font-size: 1.4rem; /* גודל פסקה מותאם אישית */
+  margin: 0; /* מסיר מרווחים עליונים ותחתונים */
 }
 
-.studio-details i {
-    color: #A00D92; /* Star color to match the brand accent */
-    margin-left: 5px;
+.studio-details p:first-child {
+  font-size: 1.8rem; /* גודל פסקה ראשונה */
+  font-weight: bold; /* מדגיש את הכותרת הראשונה */
 }
+
+
 
 .registration-button .btn {
     display: inline-block;
-    background-color: #A00D92;
+    background-color: #00c2c7;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -169,6 +172,10 @@ height: 100vh;
         max-width: 120px;
     }
 }
+
+.comment-style img {
+        max-width: 700px;
+    }
 
 /* Section 3: Trainers Section */
 .trainers-section {
@@ -243,7 +250,7 @@ height: 100vh;
 
 .registration-button .btn {
     display: inline-block;
-    background-color: #A00D92;
+    background-color: #00c2c7;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -338,9 +345,14 @@ transition: background 0.3s ease;
     height: 100%;
     border: 0;
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -399,7 +411,7 @@ transition: background 0.3s ease;
 
 .registration-button .btn {
     display: inline-block;
-    background-color: #A00D92;
+    background-color: #00c2c7;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -448,7 +460,7 @@ transition: background 0.3s ease;
 .contact-info ul li {
     margin-bottom: 15px;
     font-size: 1.2rem;
-    color: #A00D92;
+    color: #00c2c7;
 }
 
 .contact-info ul li i {
@@ -456,7 +468,7 @@ transition: background 0.3s ease;
 }
 
 .contact-info ul li a {
-    color: #A00D92;
+    color: #00c2c7;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -479,14 +491,14 @@ transition: background 0.3s ease;
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #A00D92;
+    color: #00c2c7;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #A00D92;
+    border: 2px solid #00c2c7;
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -498,7 +510,7 @@ border-color: #ff6347; /* צבע אדום עבור שדה ריק או לא חו�
 }
 
 .contact-form button {
-    background-color: #A00D92;
+    background-color: #00c2c7;
     color: white;
     padding: 12px 24px;
     border: none;
