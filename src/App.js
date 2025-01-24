@@ -9,6 +9,7 @@ import background8 from './images/backgroun8.png';
 import stretchPhoto from './images/5825580610096319359.jpg';
 import eden1 from './images/eden1.jpg';
 import eden2 from './images/eden2.jpg';
+import shaked from './images/profile.avif';
 import commant from './images/commant.png';
 import VideoPlayer from './VideoPlayer';
 
@@ -16,37 +17,25 @@ function App() {
   return (
     <>
       <section className="studio-info">
-        <div className="studio-logo">
-          <img src={mainLogo} alt="Almond Stretching Logo" />
+        <div className="studio-details" dir="rtl">
+          <img src={shaked} alt="shaked picture"  className="studio-details-logo"/>
+          <div>
+           <div className="studio-logo">
+               <img src={mainLogo} alt="Almond Stretching Logo" />
+           </div>
+             <p>היוש אני שקד</p>  <br/>
+                 <p> ואני מעבירה אימוני גמישות שמתאימים לכל הרמות <br/>
+                עם דגש אישי לכל משתתפת ומשתתף.
+                 </p> <br/>
+                 <p>
+                    תל אביב &#x2728; דיזינגוף
+                 </p> <br/>
+                 <p>
+                     ✨ הצטרפי לאימונים איתי עכשיו ✨
+                 </p>
+          </div>
         </div>
-        <div className="studio-details"  dir="rtl">
-          <p>שיעור ראשון מתנה!</p>
-                <br/>
-          <p>אנחנו נתמקד בשיפור הדרגתי ובטכניקות מתיחה שיעזרו לך להגיע רחוק יותר ובצורה בטוחה ומהנה
-          <br/>
-           עם מתיחות מודרכות וליווי צמוד שיעזרו לך להגיע לכל יעד גמישות </p>
-          <p>
 
-          </p>
-           <br/>
-          <p>תל אביב
-&#x2728;
-           שדרות ח"ן
-           </p>
-            <br/>
-
-
-           <p>
-           ✨ תני לעצמך את הדחיפה המקצועית שאת צריכה! ✨
-           </p>
-                       <br/>
-
-           <p>
-        <div  className="comment-style">
-          <img src={commant} alt="Almond Stretching Logo" />
-        </div>
-        </p>
-        </div>
        <div className="registration-button">
          <a href="#registration" className="btn">להרשמה</a>
        </div>
@@ -57,34 +46,13 @@ function App() {
       <section
         className="top-screen"
         style={{
-          backgroundImage: `url(${background8})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          color: '#fff',
-          textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000', // קו מתאר
-          position: 'relative' // נדרש כדי להציב אלמנטים על התמונה
+          backgroundImage: `url(${background8})`
         }}>
 
-        {/* שכבת הכיסוי השקופה */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(255, 255, 255, 0.001)',  // שכבה כמעט שקופה
-          }}
-        ></div>
-
         {/* התוכן */}
-        <div className="hero-content" style={{ position: 'relative' }}>
-          <h1><span>STRETCH</span> <br /> <span>YOUR LIMIT</span></h1>
+        <div className="hero-content">
+          <h1><span>STRETCH</span><br/>
+          <span>YOUR LIMIT</span></h1>
         </div>
 
       </section>
@@ -142,7 +110,7 @@ function App() {
           </div>
           <div className="class-card">
             <img src="https://static.wixstatic.com/media/11062b_93f062443b064191b85639832654ac05~mv2.jpg/v1/fill/w_468,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_93f062443b064191b85639832654ac05~mv2.jpg" alt="Class 2" />
-            <p>שיעור בוקר - 40 ש"ח</p>
+            <p>שיעור יחיד - 40 ש"ח</p>
           </div>
           <div className="class-card">
             <img src="https://static.wixstatic.com/media/11062b_0784fee4aebd4b178e31f63f6c121dd6~mv2.jpg/v1/fill/w_468,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_0784fee4aebd4b178e31f63f6c121dd6~mv2.jpg" alt="Class 3" />
@@ -150,7 +118,7 @@ function App() {
           </div>
           <div className="class-card">
             <img src="https://static.wixstatic.com/media/1a25c2a350eb45aebc2fb934cfbb20d4.png/v1/fill/w_468,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a25c2a350eb45aebc2fb934cfbb20d4.png" alt="Class 4" />
-            <p>שיעור ערב - 40 ש"ח</p>
+            <p></p>
           </div>
         </div>
 
